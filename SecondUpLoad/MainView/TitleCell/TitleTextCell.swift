@@ -13,13 +13,10 @@ import SnapKit
 
 final class TitleTextCell: UITableViewCell {
     let disposBag = DisposeBag()
-    
-    
     let titleInputField = UITextField()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
         attribute()
         layout()
     }
