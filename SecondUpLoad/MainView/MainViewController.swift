@@ -45,6 +45,9 @@ class MainViewController: UIViewController {
         tableView.separatorStyle = .singleLine
         tableView.tableFooterView = UIView()
         tableView.register(TitleTextCell.self, forCellReuseIdentifier: "TitleTextCell") // index 0
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategorySelectCell") // index 1
+        tableView.register(PriceTextFieldCell.self, forCellReuseIdentifier: "PriceTextFieldCell") // index 2
+        tableView.register(DetailWriteFormCell.self, forCellReuseIdentifier: "DetailWriteFormCell") //    3
     }
     
     private func layout() {
