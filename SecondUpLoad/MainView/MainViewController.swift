@@ -19,21 +19,22 @@ class MainViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil  )
+        
+        attribute()
+        layout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
     
     func bind(_ viewModel: MainViewModel) {
         viewModel.cellData
         .drive(tableView.rx.items) { tv, row, data in
             switch row {
             case 0:
-                let cell = tv.dequeueReusableCell(withIdentifier: "TitleTextFieldCell", for: IndexPath(row: row, section: 0)) as! TitleTextCell
+                let cell = tv.dequeueReusableCell(withIdentifier: "TitleTextCell", for: IndexPath(row: row, section: 0)) as! TitleTextCell
                 cell.selectionStyle = .none
                 cell.titleInputField.placeholder = data
                 cell.bind(viewModel.titleTextFieldCellViewModel)

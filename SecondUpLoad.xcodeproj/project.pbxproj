@@ -98,6 +98,7 @@
 			children = (
 				6399ADB42967F63A00E938B6 /* MainViewController.swift */,
 				6399ADB82967F6ED00E938B6 /* MainViewModel.swift */,
+				6399ADD0296BD76E00E938B6 /* MainModel.swift */,
 				6399ADBC2967FB3800E938B6 /* TitleCell */,
 			);
 			path = MainView;
@@ -120,7 +121,6 @@
 			children = (
 				6399ADBA2967FB2F00E938B6 /* TitleTextCell.swift */,
 				6399ADBD2967FB5600E938B6 /* TitleTextCellViewModel.swift */,
-				6399ADD0296BD76E00E938B6 /* MainModel.swift */,
 			);
 			path = TitleCell;
 			sourceTree = "<group>";

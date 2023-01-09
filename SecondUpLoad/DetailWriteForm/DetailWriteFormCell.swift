@@ -30,7 +30,7 @@ class DetailWriteFormCell: UITableViewCell {
     
     
     func bind(_ viewModel: DetailWriteFormCellViewModel) {
-        
+        contentInputView.rx.text.bind(to: viewModel.contentValue).disposed(by: disposeBag)
     }
     
     private func attribute() {
